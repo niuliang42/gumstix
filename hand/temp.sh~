@@ -1,0 +1,4 @@
+#!/bin/sh
+declare -i aa=0
+cat txt > aa
+echo $aa

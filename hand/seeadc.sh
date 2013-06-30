@@ -1,0 +1,13 @@
+#!/bin/sh
+declare -i x,x0,x1,x2,x3,x4
+for((i=0; ; i++))
+do  
+	x0=$(cat /sys/class/hwmon/hwmon0/device/in7_input)
+	x1=$(cat /sys/class/hwmon/hwmon0/device/in7_input)
+	x2=$(cat /sys/class/hwmon/hwmon0/device/in7_input)
+	x3=$(cat /sys/class/hwmon/hwmon0/device/in7_input)
+	x4=$(cat /sys/class/hwmon/hwmon0/device/in7_input)
+	x=x0+x1+x2+x3+x4
+	x=x/5
+	echo $x
+done
